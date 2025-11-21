@@ -1,3 +1,4 @@
+
 import React from 'react';
 import MapWidget from './MapWidget';
 import ShipmentDetails from './ShipmentDetails';
@@ -5,6 +6,7 @@ import RouteEfficiency from './RouteEfficiency';
 import TruckCapacity from './TruckCapacity';
 import ChatWidget from './ChatWidget';
 import ShipmentTrends from './ShipmentTrends';
+import { THEME } from '../constants';
 
 const Dashboard: React.FC = () => {
   return (
@@ -29,7 +31,10 @@ const Dashboard: React.FC = () => {
                  <span className="text-sm text-neon">/ 1h 50m</span>
              </div>
              <div className="mt-4 h-1 w-full rounded-full bg-neutral-800">
-                 <div className="h-full w-[85%] rounded-full bg-neon shadow-[0_0_10px_#00FF00]"></div>
+                 <div 
+                    className="h-full w-[85%] rounded-full bg-neon"
+                    style={{ boxShadow: `0 0 10px ${THEME.colors.neon}` }}
+                 ></div>
              </div>
          </div>
 

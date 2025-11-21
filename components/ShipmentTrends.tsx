@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { BarChart, Bar, ResponsiveContainer, XAxis, Tooltip, Cell } from 'recharts';
 import { Download } from 'lucide-react';
+import { THEME } from '../constants';
 
 const data = [
   { name: '28.10', val: 30 },
@@ -38,13 +40,13 @@ const ShipmentTrends: React.FC = () => {
             <Tooltip 
                 cursor={{fill: 'rgba(255,255,255,0.05)'}}
                 contentStyle={{ backgroundColor: '#111', borderColor: '#333', borderRadius: '8px', color: '#fff' }}
-                itemStyle={{ color: '#00FF00' }}
+                itemStyle={{ color: THEME.colors.neon }}
             />
             <Bar dataKey="val" radius={[4, 4, 4, 4]}>
               {data.map((entry, index) => (
                 <Cell 
                     key={`cell-${index}`} 
-                    fill={entry.val > 70 ? '#00FF00' : '#333333'} 
+                    fill={entry.val > 70 ? THEME.colors.neon : '#333333'} 
                     className="transition-all duration-300 hover:opacity-80"
                 />
               ))}

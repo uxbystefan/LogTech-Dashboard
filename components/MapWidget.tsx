@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { THEME } from '../constants';
 
 const MapWidget: React.FC = () => {
   return (
@@ -49,7 +51,7 @@ const MapWidget: React.FC = () => {
             <path 
                 d="M-50,300 C100,300 150,250 200,200 C250,150 300,100 400,100 C500,100 600,150 700,150" 
                 fill="none" 
-                stroke="#00FF00" 
+                stroke={THEME.colors.neon}
                 strokeWidth="4" 
                 strokeDasharray="10 5"
                 filter="url(#neon-glow)"
@@ -57,16 +59,16 @@ const MapWidget: React.FC = () => {
             />
 
             {/* Checkpoints */}
-            <circle cx="200" cy="200" r="6" fill="#050505" stroke="#00FF00" strokeWidth="2" />
+            <circle cx="200" cy="200" r="6" fill="#050505" stroke={THEME.colors.neon} strokeWidth="2" />
             <text x="200" y="225" fill="#666" fontSize="10" textAnchor="middle" fontFamily="Inter">Chicago Hub</text>
 
-            <circle cx="400" cy="100" r="6" fill="#050505" stroke="#00FF00" strokeWidth="2" />
+            <circle cx="400" cy="100" r="6" fill="#050505" stroke={THEME.colors.neon} strokeWidth="2" />
             <text x="400" y="80" fill="#666" fontSize="10" textAnchor="middle" fontFamily="Inter">Toledo Station</text>
             
             {/* Current Truck Position (Animated Pulse) */}
             <g transform="translate(600, 150)">
-                 <circle r="15" fill="rgba(0, 255, 0, 0.2)" className="animate-ping" />
-                 <circle r="8" fill="#00FF00" stroke="white" strokeWidth="2" />
+                 <circle r="15" fill={THEME.colors.neonDim} className="animate-ping" />
+                 <circle r="8" fill={THEME.colors.neon} stroke="white" strokeWidth="2" />
                  
                  {/* Tooltip simulating map UI */}
                  <foreignObject x="15" y="-50" width="160" height="80">
