@@ -12,10 +12,10 @@ const ViewContainer: React.FC<{ title: string; children: React.ReactNode }> = ({
 
 export const ShipmentView: React.FC = () => {
   const shipments = [
-    { id: 'TRK-492', driver: 'Michael J.', origin: 'Kyiv', dest: 'Rivne', status: 'In Transit', eta: '2h 30m', progress: 65 },
-    { id: 'TRK-881', driver: 'Sarah C.', origin: 'Lviv', dest: 'Warsaw', status: 'Loading', eta: '1d 4h', progress: 10 },
-    { id: 'TRK-102', driver: 'David B.', origin: 'Odesa', dest: 'Kyiv', status: 'In Transit', eta: '5h 15m', progress: 45 },
-    { id: 'TRK-554', driver: 'Alex T.', origin: 'Dnipro', dest: 'Kharkiv', status: 'Delayed', eta: '8h 00m', progress: 30 },
+    { id: 'TRK-492', driver: 'Michael J.', origin: 'Chicago', dest: 'Detroit', status: 'In Transit', eta: '2h 30m', progress: 65 },
+    { id: 'TRK-881', driver: 'Sarah C.', origin: 'Seattle', dest: 'Los Angeles', status: 'Loading', eta: '1d 4h', progress: 10 },
+    { id: 'TRK-102', driver: 'David B.', origin: 'Miami', dest: 'Jacksonville', status: 'In Transit', eta: '5h 15m', progress: 45 },
+    { id: 'TRK-554', driver: 'Alex T.', origin: 'Denver', dest: 'Salt Lake City', status: 'Delayed', eta: '8h 00m', progress: 30 },
   ];
 
   return (
@@ -70,9 +70,9 @@ export const ShipmentView: React.FC = () => {
 
 export const HistoryView: React.FC = () => {
   const history = [
-    { id: 'LOG-9921', date: 'Oct 24, 2023', route: 'Berlin - Munich', items: 450, total: '$12,400', status: 'Delivered' },
-    { id: 'LOG-9920', date: 'Oct 22, 2023', route: 'Paris - Lyon', items: 120, total: '$4,200', status: 'Delivered' },
-    { id: 'LOG-9919', date: 'Oct 20, 2023', route: 'Madrid - Barcelona', items: 3200, total: '$45,900', status: 'Canceled' },
+    { id: 'LOG-9921', date: 'Oct 24, 2023', route: 'San Francisco - Los Angeles', items: 450, total: '$12,400', status: 'Delivered' },
+    { id: 'LOG-9920', date: 'Oct 22, 2023', route: 'New York - Boston', items: 120, total: '$4,200', status: 'Delivered' },
+    { id: 'LOG-9919', date: 'Oct 20, 2023', route: 'Dallas - Houston', items: 3200, total: '$45,900', status: 'Canceled' },
   ];
 
   return (
@@ -116,7 +116,7 @@ export const NotificationsView: React.FC = () => {
                 <Truck className="text-neon mt-1" size={20} />
                 <div>
                     <h4 className="text-sm font-bold text-white">Shipment Arrived</h4>
-                    <p className="text-xs text-neutral-400 mt-1">Order #LOG-9921 has been successfully delivered to Munich Warehouse.</p>
+                    <p className="text-xs text-neutral-400 mt-1">Order #LOG-9921 has been successfully delivered to Atlanta Warehouse.</p>
                     <p className="text-[10px] text-neutral-500 mt-2">Yesterday, 09:15 AM</p>
                 </div>
             </div>

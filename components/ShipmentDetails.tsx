@@ -38,8 +38,8 @@ const ShipmentDetails: React.FC = () => {
              <div className="text-xs text-neutral-500">Route Progress</div>
              <div className="relative pt-2">
                  <div className="flex justify-between text-[10px] font-medium text-white mb-1">
-                    <span>Kyiv</span>
-                    <span>Rivne</span>
+                    <span>Chicago</span>
+                    <span>Detroit</span>
                  </div>
                  <div className="h-1.5 w-full rounded-full bg-neutral-800">
                      <div className="h-full w-2/3 rounded-full bg-neon shadow-neon-sm relative">
