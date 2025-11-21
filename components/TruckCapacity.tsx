@@ -54,7 +54,7 @@ const TruckCapacity: React.FC = () => {
             </div>
             <div>
                  <p className="text-xs text-neutral-500 uppercase">Max Load</p>
-                 <p className="font-mono text-sm text-white">8,453 KG</p>
+                 <p className="font-mono text-sm text-white">18,635 LBS</p>
             </div>
             <div className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-neon animate-pulse"></div>

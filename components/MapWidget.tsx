@@ -58,10 +58,10 @@ const MapWidget: React.FC = () => {
 
             {/* Checkpoints */}
             <circle cx="200" cy="200" r="6" fill="#050505" stroke="#00FF00" strokeWidth="2" />
-            <text x="200" y="225" fill="#666" fontSize="10" textAnchor="middle" fontFamily="Inter">Warehouse A</text>
+            <text x="200" y="225" fill="#666" fontSize="10" textAnchor="middle" fontFamily="Inter">Chicago Hub</text>
 
             <circle cx="400" cy="100" r="6" fill="#050505" stroke="#00FF00" strokeWidth="2" />
-            <text x="400" y="80" fill="#666" fontSize="10" textAnchor="middle" fontFamily="Inter">Checkpoint 2</text>
+            <text x="400" y="80" fill="#666" fontSize="10" textAnchor="middle" fontFamily="Inter">Toledo Station</text>
             
             {/* Current Truck Position (Animated Pulse) */}
             <g transform="translate(600, 150)">
@@ -76,8 +76,8 @@ const MapWidget: React.FC = () => {
                             <span className="text-neon">On Time</span>
                         </div>
                         <div className="mt-1 text-[10px] text-neutral-400">
-                            Speed: 85 km/h<br/>
-                            Next: NYC Terminal
+                            Speed: 55 mph<br/>
+                            Next: Detroit Terminal
                         </div>
                     </div>
                  </foreignObject>

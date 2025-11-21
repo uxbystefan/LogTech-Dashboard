@@ -25,7 +25,7 @@ const Dashboard: React.FC = () => {
          <div className="rounded-3xl border border-dark-border bg-dark-card p-6 shadow-lg">
              <div className="mb-2 text-xs font-medium uppercase tracking-widest text-neutral-500">Distance to Arrival</div>
              <div className="flex items-baseline gap-2">
-                 <span className="text-3xl font-bold text-white">120<span className="text-sm font-normal text-neutral-500">KM</span></span>
+                 <span className="text-3xl font-bold text-white">75<span className="text-sm font-normal text-neutral-500">MI</span></span>
                  <span className="text-sm text-neon">/ 1h 50m</span>
              </div>
              <div className="mt-4 h-1 w-full rounded-full bg-neutral-800">
